@@ -19,7 +19,7 @@ export const FormStep2 = () => {
                 payload: 2
             });
         }
-    }, []);
+    }, [dispatch, history, state.name]);
 
     const handleNextStep = () => {
         if(state.name !== '') {
